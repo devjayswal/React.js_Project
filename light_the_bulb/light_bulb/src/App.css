@@ -1,0 +1,40 @@
+.bulb-off{
+  display: block;
+  background-color: #000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+ 
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+*{
+  background-color: #000000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+ 
+}
+.button{
+  background-color: #353434;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  
+  
+}
+.bulb-on{
+  display : none;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px 10px #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
