@@ -1,10 +1,15 @@
 import { Outlet , Navigate } from 'react-router-dom'
 
-const AuthLayout = () => {
-  const isAuth = false;
+import { useUserContext } from '@/context/AuthContext';
+
+
+export default function AuthLayout(){
+  const {isAuthenticated} = useUserContext();
+
+
   return (
     <>
-    { isAuth ? (
+    { isAuthenticated ? (
       <Navigate to='/'/>
     ):(
       <>
@@ -17,12 +22,8 @@ const AuthLayout = () => {
        alt="logo" 
        className="hidden xl:block h-screen w-1/2 object-cover bg-no-repeat"
        />
-
-
       </>
     )}
     </>
-  )
+  );
 }
-
-export default AuthLayout
