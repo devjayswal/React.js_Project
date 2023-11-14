@@ -1,9 +1,4 @@
-import React from 'react'
+import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
 
-const LeftSidebar = () => {
-    return (
-      <div>LeftSidebar</div>
-    )
-  }
-  
-  export default LeftSidebar
+import { INavLink } from "@/types";
+import {sidebarLinks} from "@/constants";
